@@ -103,6 +103,7 @@ def init_worker(directory: dict[str, Any]):
 def main() -> None:
     downloads_folder = Path.home() / "Downloads"
     isbn_folder = downloads_folder / "isbn"
+    isbn_folder.mkdir(parents=True, exist_ok=True)
 
     isbn_directory_file = Path("data/isbn_directory.json")
     isbn_directory = read_isbn_directory(isbn_directory_file)
