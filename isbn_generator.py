@@ -13,7 +13,6 @@ from isbn_agency.isbn_check import is_valid_isbn
 isbn_directory_cache = None
 
 
-
 def compute_check_digits(bases: np.ndarray) -> np.ndarray:
     """
     bases: np.ndarray of strings, each 12 digits (prefix+body).
